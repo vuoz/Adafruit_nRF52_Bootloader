@@ -25,6 +25,8 @@
 #ifndef ZONGLE_H
 #define ZONGLE_H
 
+#define UICR_REGOUT0_VALUE UICR_REGOUT0_VOUT_3V3
+
 /*------------------------------------------------------------------*/
 /* CLOCK - 453-00059 does not have 32.76kHz crystal
  *------------------------------------------------------------------*/
