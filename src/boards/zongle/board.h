@@ -25,6 +25,8 @@
 #ifndef ZONGLE_H
 #define ZONGLE_H
 
+#define _PINNUM(port, pin) ((port) * 32 + (pin))
+
 #define UICR_REGOUT0_VALUE UICR_REGOUT0_VOUT_3V3
 
 /*------------------------------------------------------------------*/
@@ -37,7 +39,7 @@
 /* LED
  *------------------------------------------------------------------*/
 #define LEDS_NUMBER     1
-#define LED_PRIMARY_PIN 25
+#define LED_PRIMARY_PIN _PINNUM(0, 25)
 #define LED_STATE_ON    1
 
 /*------------------------------------------------------------------*/
@@ -51,8 +53,8 @@
 //--------------------------------------------------------------------+
 // BLE OTA
 //--------------------------------------------------------------------+
-#define BLEDIS_MANUFACTURER "Ezurio"
-#define BLEDIS_MODEL        "453-00059"
+#define BLEDIS_MANUFACTURER "vuoz"
+#define BLEDIS_MODEL        "Zongle"
 
 //--------------------------------------------------------------------+
 // USB
